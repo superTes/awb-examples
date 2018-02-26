@@ -1,0 +1,25 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e": "mocha --timeout 10000 mocha --require ts-node/register $(find ./specs -path '*.spec.ts')",
+    "install-drivers": "awb standalone chrome gecko",
+    "start-drivers": "awb standalone start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.48",
+    "awb": "^0.1.6",
+    "mocha": "^5.0.1",
+    "ts-node": "^5.0.0",
+    "typescript": "^2.7.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2"
+  }
+}
