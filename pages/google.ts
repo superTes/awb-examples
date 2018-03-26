@@ -21,7 +21,6 @@ export class Google {
     const { x, y } = await this.inputSearch.location()
     const body = await this.inputSearch.locationView()
     const { width, height } = await this.inputSearch.size()
-    console.log(x, y, body, width, height)
   }
 
   async getResultSearchText() {
