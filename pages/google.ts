@@ -1,13 +1,14 @@
-import { Element, Elements } from 'awb'
+import { ElementAWB, ElementsAWB } from 'awb'
 import { element, elements } from './driver'
 
 
 export class Google {
-  submitSearch: Element
-  inputSearch: Element
-  resultSearch: Element
+  submitSearch: ElementAWB
+  inputSearch: ElementAWB
+  resultSearch: ElementAWB
+
   constructor() {
-    this.submitSearch = element('body').element('.tsf-p').element('[name="btnK"]').waitForClicable(1000)
+    this.submitSearch = element('body').element('.tsf-p').element('[name="btnK"]').waitForClickable(1000)
     this.inputSearch = element('#lst-ib')
     this.resultSearch = element('#ires .g').waitForElementVisible(1000)
   }
